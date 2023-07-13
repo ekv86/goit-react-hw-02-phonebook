@@ -3,7 +3,6 @@ import { nanoid } from 'nanoid';
 import { Form } from './Form';
 import { ContactsList } from './ConactsList';
 import { Filter } from './Filter';
-import css from './PhoneBook.module.css';
 
 export class PhoneBook extends Component {
   state = {
@@ -52,7 +51,7 @@ export class PhoneBook extends Component {
 
   render() {
     return (
-      <div className={css.phonebook}>
+      <div>
         <h1>Phonebook</h1>
         <Form onSubmit={this.formSubmitHandler} />
         <h2>Contacts</h2>
